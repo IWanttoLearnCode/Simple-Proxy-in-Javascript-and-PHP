@@ -1,0 +1,33 @@
+<html>
+<head>
+
+<title>
+
+</title>
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+  function loadPage()
+	{
+		var proxlink = "proxy.php?url=" + document.getElementById("urladdress").value;
+		$("#loadarea").load(proxylink);
+	}
+
+</script>
+
+</head>
+
+<body>
+	<center>
+	  <br>
+		<form action="" method="get" accept-charset="utf-8">
+		<input name="url" type="text" class="txt" id = "input" value="type url here.." onFocus="this.value='';" />
+		<input type="submit" class="btn" value="Go" />
+		</form>        
+        </center>
+        <div id="loadarea">
+        
+        </div>
+
+</body>
+</html>
